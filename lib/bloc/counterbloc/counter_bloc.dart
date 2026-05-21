@@ -1,4 +1,3 @@
-import 'dart:ffi';
 import 'package:bloc/bloc.dart';
 import 'package:bloc_learning_project/bloc/counterbloc/counter_event.dart';
 import 'package:bloc_learning_project/bloc/counterbloc/counter_state.dart';
