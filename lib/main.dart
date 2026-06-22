@@ -1,5 +1,7 @@
 import 'package:bloc_learning_project/bloc/counterbloc/counter_bloc.dart';
 import 'package:bloc_learning_project/bloc/switchbloc/switch_bloc.dart';
+import 'package:bloc_learning_project/bloc/todolist/todo_list_bloc.dart';
+import 'package:bloc_learning_project/view/TodoList/todo_list_screen.dart';
 import 'package:bloc_learning_project/view/counter/counter_screen.dart';
 import 'package:bloc_learning_project/view/switch/switchsliderscreen.dart';
 import 'package:flutter/material.dart';
@@ -18,12 +20,14 @@ class MyApp extends StatelessWidget {
         providers: [
           // BlocProvider(create: (context) => CounterBloc())
           BlocProvider(create: (context) => SwitchBloc()),
+          BlocProvider(create: (context) => TodoListBloc()),
         ],
         child: MaterialApp(
           title: 'Flutter Demo',
           debugShowCheckedModeBanner: false,
           // home: CounterScreen(),
-          home: Switchslider(),
+          // home: Switchslider(),
+          home: TodoListScreen(),
         ));
   }
 }
